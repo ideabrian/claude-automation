@@ -1,0 +1,70 @@
+{
+  "name": "claude-automation",
+  "version": "1.0.0",
+  "description": "Universal automation framework for Claude Code - consistent development across all projects",
+  "keywords": [
+    "claude",
+    "automation",
+    "ai",
+    "development",
+    "workflow",
+    "devops",
+    "cli"
+  ],
+  "homepage": "https://github.com/yourusername/claude-automation",
+  "bugs": {
+    "url": "https://github.com/yourusername/claude-automation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/claude-automation.git"
+  },
+  "license": "MIT",
+  "author": "Your Name",
+  "main": "lib/index.js",
+  "bin": {
+    "claude-automation": "./bin/claude-automation.js",
+    "claude-init": "./bin/init.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "templates/",
+    "commands/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "build": "tsc",
+    "prepublishOnly": "npm run build && npm test",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "js-yaml": "^4.1.0",
+    "ora": "^7.0.1",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "semver": "^7.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/inquirer": "^9.0.7",
+    "@types/js-yaml": "^4.0.9",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
