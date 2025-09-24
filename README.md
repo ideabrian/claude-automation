@@ -18,6 +18,7 @@ Transform any codebase into an AI-automated powerhouse in under 30 seconds. The 
 - 🌍 **Any language** - JavaScript, Python, Ruby, Go, Rust, and more
 - 📦 **Any framework** - React, Vue, Django, Rails, Laravel, and more
 - ☁️ **Any platform** - Vercel, Netlify, CloudFlare, AWS, and more
+- 🔄 **Project Transformer** - Transform any project into something new in minutes
 
 ## 🚀 Quick Start
 
@@ -32,8 +33,10 @@ git clone https://github.com/ideabrian/claude-automation.git
 cd claude-automation
 ./install.sh
 
-# Option 3: NPM (coming soon)
-npx claude-automation init
+# Option 3: Using aliases (if configured)
+claude-auto        # Install framework in current project
+transform          # Transform current project
+clone-transform    # Clone and transform in one step
 ```
 
 ### Use Immediately
@@ -115,6 +118,8 @@ Open Claude Code and type:
 - [User Guide](CLAUDE-AUTOMATION-USER-GUIDE.md) - Complete documentation
 - [Quick Reference](CLAUDE-QUICK-REFERENCE.md) - Printable cheat sheet
 - [Framework Design](CLAUDE-AUTOMATION-FRAMEWORK.md) - Technical details
+- [Project Transformer Guide](PROJECT-TRANSFORMER-GUIDE.md) - Transform projects into new ones
+- [Transformation Templates](TRANSFORMATION-TEMPLATES.md) - Pre-made transformation templates
 
 ## 🎯 Core Commands
 
@@ -208,6 +213,22 @@ Do something: \$ARGUMENTS" > .claude/commands/custom.md
 /test            # Full test suite
 /release 2.0.0   # Create release
 # Automatically: versions, tags, deploys, documents
+```
+
+### Project Transformation
+```bash
+# Transform existing project
+transform        # Interactive transformation wizard
+
+# Or clone and transform in one step
+clone-transform fastfiles my-new-app
+
+# Follow prompts to transform into:
+# - E-commerce platform
+# - Prediction market
+# - Chat application
+# - Survey platform
+# - And more!
 ```
 
 ## 🌟 Real Results
